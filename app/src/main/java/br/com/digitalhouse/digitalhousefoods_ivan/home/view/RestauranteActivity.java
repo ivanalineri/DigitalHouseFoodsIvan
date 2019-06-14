@@ -15,6 +15,7 @@ import java.util.List;
 import br.com.digitalhouse.digitalhousefoods_ivan.R;
 import br.com.digitalhouse.digitalhousefoods_ivan.home.RecyclerViewClickListener;
 import br.com.digitalhouse.digitalhousefoods_ivan.home.adapters.RecyclerViewRestauranteAdapter;
+import br.com.digitalhouse.digitalhousefoods_ivan.home.model.Pratos;
 import br.com.digitalhouse.digitalhousefoods_ivan.home.model.Restaurante;
 import br.com.digitalhouse.digitalhousefoods_ivan.register.RegisterActivity;
 
@@ -49,9 +50,14 @@ public class RestauranteActivity extends AppCompatActivity implements RecyclerVi
 
     @Override
     public void onClick(Restaurante restaurante) {
-        Intent intent = new Intent(this, DetalheRestaurante.class);
+        Intent intent = new Intent(this, PratosActivity.class);
         intent.putExtra("RESTAURANTE", restaurante);
         startActivity(intent);
+
+    }
+
+    @Override
+    public void onClick(Pratos pratos) {
 
     }
 
