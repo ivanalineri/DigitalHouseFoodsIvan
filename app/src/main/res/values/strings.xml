@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">DigitalHouse Foods - Ivan</string>
+    <string name="lembrar">Remember-me</string>
+    <string name="email">E-mail</string>
+    <string name="nome">Nome</string>
+    <string name="password">Password</string>
+    <string name="passwordRepeat">Repeat Password</string>
+    <string name="entrar">LOG IN</string>
+    <string name="registrar">REGISTER</string>
+    <string name="profile">Profile</string>
+    <string name="or">or</string>
+    <string name="login_with_facebook">LOGIN WITH FACEBOOK</string>
+</resources>

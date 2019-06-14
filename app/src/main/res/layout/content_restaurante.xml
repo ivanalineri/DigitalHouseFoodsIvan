@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recyclerViewRestaurantes"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".home.view.RestauranteActivity"
+    tools:showIn="@layout/activity_restaurante"
+    tools:listitem="@layout/restaurante_recyclerview_item"
+    tools:itemCount="5"
+    tools:menu="@menu/main_menu"
+    tools:layoutManager="android.support.v7.widget.GridLayoutManager"
+    tools:spanCount="1">
+
+</android.support.v7.widget.RecyclerView>
