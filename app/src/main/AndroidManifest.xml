@@ -11,8 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".home.view.PratosActivity"></activity>
-        <activity android:name=".home.view.DetalheRestaurante" />
+        <activity android:name=".home.view.DetalheRestauranteActivity"></activity>
+        <activity android:name=".home.view.PratosActivity" />
+        <activity android:name=".home.view.DetalhePratoActivity" />
         <activity android:name=".home.adapters.RecyclerViewRestauranteAdapter" />
         <activity android:name=".home.view.RestauranteActivity" />
         <activity android:name=".register.RegisterActivity" />

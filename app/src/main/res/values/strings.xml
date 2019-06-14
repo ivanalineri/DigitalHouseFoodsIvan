@@ -10,4 +10,7 @@
     <string name="profile">Profile</string>
     <string name="or">or</string>
     <string name="login_with_facebook">LOGIN WITH FACEBOOK</string>
+    <string name="descri_o_do_restaurante">Descrição do Restaurante</string>
+    <string name="nome_do_prato">Nome do Prato</string>
+    <string name="nome_do_restaurante">Nome do Restaurante</string>
 </resources>

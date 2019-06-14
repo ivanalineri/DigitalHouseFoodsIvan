@@ -36,7 +36,9 @@ public class RecyclerViewPratosAdapter extends RecyclerView.Adapter<RecyclerView
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int position) {
         View view = LayoutInflater.from(viewGroup.getContext())
                 .inflate(R.layout.pratos_recyclerview_item, viewGroup, false);
-        return new RecyclerViewPratosAdapter.ViewHolder(view);
+        ViewHolder viewHolder = new ViewHolder(view);
+
+        return viewHolder;
     }
 
     @Override
@@ -60,13 +62,11 @@ public class RecyclerViewPratosAdapter extends RecyclerView.Adapter<RecyclerView
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        private ImageView imageViewPratosRest;
         private ImageView imageViewFoto;
         private TextView textViewTitulo;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            imageViewPratosRest = itemView.findViewById(R.id.image_view_pratos_rest);
             imageViewFoto = itemView.findViewById(R.id.imageViewFoto);
             textViewTitulo = itemView.findViewById(R.id.textViewTitulo);
 
@@ -79,6 +79,9 @@ public class RecyclerViewPratosAdapter extends RecyclerView.Adapter<RecyclerView
 
 
         }
+
+
+
     }
 
 

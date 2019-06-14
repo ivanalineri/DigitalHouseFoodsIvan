@@ -57,7 +57,7 @@ public class PratosActivity extends AppCompatActivity implements RecyclerViewCli
 
     @Override
     public void onClick(Pratos pratos) {
-        Intent intent = new Intent(this, DetalheRestaurante.class);
+        Intent intent = new Intent(this, DetalhePratoActivity.class);
         intent.putExtra("PRATOS", pratos);
         startActivity(intent);
 

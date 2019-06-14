@@ -3,12 +3,16 @@ package br.com.digitalhouse.digitalhousefoods_ivan.home.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Restaurante implements Parcelable {
 
     private String titulo;
     private String texto;
     private String hora;
     private int photo;
+    private List<Pratos> pratosCardapio = new ArrayList<>();
 
 
     public Restaurante() {
@@ -48,12 +52,17 @@ public class Restaurante implements Parcelable {
     public static Creator<Restaurante> getCREATOR() {
         return CREATOR;
     }
+    public List<Pratos> getPratosCardapio() {
+        return pratosCardapio;
+    }
+
 
     protected Restaurante(Parcel in) {
         titulo = in.readString();
         texto = in.readString();
         photo = in.readInt();
         hora = in.readString();
+        pratosCardapio = in.createTypedArrayList(Pratos.CREATOR);
     }
 
     public static final Creator<Restaurante> CREATOR = new Creator<Restaurante>() {
@@ -79,6 +88,7 @@ public class Restaurante implements Parcelable {
         parcel.writeString(texto);
         parcel.writeInt(photo);
         parcel.writeString(hora);
+        parcel.writeTypedList(pratosCardapio);
 
     }
 

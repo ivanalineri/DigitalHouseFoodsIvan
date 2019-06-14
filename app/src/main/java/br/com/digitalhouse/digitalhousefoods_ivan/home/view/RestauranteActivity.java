@@ -77,7 +77,7 @@ public class RestauranteActivity extends AppCompatActivity implements RecyclerVi
         int id = item.getItemId();
         if (id == R.id.action_settings) {
 
-            Intent intent = new Intent(RestauranteActivity.this, PratosActivity.class);
+            Intent intent = new Intent(RestauranteActivity.this, RegisterActivity.class);
             startActivity(intent);
             return true;
         }
